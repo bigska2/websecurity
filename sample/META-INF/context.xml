@@ -1,0 +1,21 @@
+<Context>
+
+<Resource name="jdbc/mysql"
+
+auth="Container"
+
+type="javax.sql.DataSource"
+
+username="mysql"
+
+password="mysql"
+
+driverClassName="com.mysql.jdbc.Driver"
+
+url="jdbc:mysql:/localhost:3306/sample"
+
+maxActive="15"
+
+maxIdle="3"/>
+
+</Context>
