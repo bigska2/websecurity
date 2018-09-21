@@ -30,6 +30,11 @@
 body, html {
 	height: 100%;
 	font-family: sans-serif;
+
+  background-image:url(/fantasy/lineup/images/fb_bg7.jpeg);
+  background-repeat:no-repeat;
+  background-size:cover;
+
 }
 
 /* ------------------------------------ */
@@ -143,7 +148,7 @@ iframe {
 .limiter {
   width: 100%;
   margin: 0 auto;
-  background: #f6b933;
+  //background: #f6b933;
   //background: #fa7171;
   //background: -webkit-linear-gradient(bottom, #c471f5, #fa71cd);
   //background: -o-linear-gradient(bottom, #c471f5, #fa71cd);
@@ -153,14 +158,35 @@ iframe {
 
 }
 
+.user_header {
+  //background: #000000;
+  color: #eba531;
+  width: 100%;
+  padding: 0px 100px;
+}
+
+.user_header_bg {
+  background: #000000;
+  color: #eba531;
+  width: 100%;
+  padding: 0px 100px;
+}
+
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  //width: 1175px;
+  height:175px;
+
+  width: 100%;
+  padding: 0px 100px;
 }
 
 .banner {
-  background: #51b4c8;
+  //background: #51b4c8;
+  //width: 100%;
+  //padding: 33px 100px;
 }
 
 .helmetLogo {
