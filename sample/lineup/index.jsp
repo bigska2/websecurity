@@ -66,7 +66,7 @@
              	statement.execute(toggleQuery);	
          	 }
 
-			 String lineupQuery = "select * from lineup where userName = '"+username+"'";
+			 String lineupQuery = "select * from lineup where userName = '"+username+"' order by id";
 		     lineupRs = statement.executeQuery(lineupQuery) ;
 %>
 
@@ -120,7 +120,7 @@
 		<tbody>
 			<%
 				while(lineupRs.next()){
-					String helmetImg = "images/"+lineupRs.getString(4)+"-icon.png";
+					String helmetImg = "images/helmets/"+lineupRs.getString(7);
 			%>
 			<tr class="row100 body">
 				<td><%=lineupRs.getString(2)%></td>
