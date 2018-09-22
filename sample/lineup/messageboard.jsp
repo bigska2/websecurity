@@ -2,6 +2,8 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="css/table.css">
+	<link rel="icon" href="/fantasy/lineup/images/icons/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/fantasy/lineup/images/icons/favicon.ico" type="image/x-icon"> 
 </head>
 <body>
 
