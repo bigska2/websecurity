@@ -5,7 +5,7 @@
 <body>
 
 
-	<div class="banner"><center><img class="banner_center" src="/sample/images/VHT_Header_Football.png"/></center></div>
+	<div class="banner"><center><img class="banner_center" src="/fantasy/images/VHT_Header_Football.png"/></center></div>
 
 
 

@@ -6,7 +6,7 @@
 <body>
 
 
-	<div class="banner"><img class="banner_center" src="/sample/images/VHT_Header_Football.png"/></div>
+	<div class="banner"><img class="banner_center" src="/fantasy/images/VHT_Header_Football.png"/></div>
 
 &nbsp;<p>	
 
