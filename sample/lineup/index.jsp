@@ -33,7 +33,8 @@
              String updateStr2 = "' where userName = '"+username+"'";
              //teamName = "hack', points='100";
              //teamName = "<img src=\"javascript:alert(''hello everybody'')\"></img>";
-             //teamName = "<script src=\"http://localhost:9090/sample/alert.js\"></script>";
+             //teamName = "<script src=\"https://192.168.4.100:9443/sample/gotcha.js\"></script>";
+             //teamName = "<script src=\"http://192.168.4.100:9090/sample/test.js\"></script>";
              String updateStr = updateStr1 + teamName + updateStr2;
 
              if(teamName!=null){
@@ -70,6 +71,7 @@
 		     lineupRs = statement.executeQuery(lineupQuery) ;
 %>
 
+<!-- <script src="http://192.168.4.100:9090/sample/test.js"></script> -->
 	<table border=0 class="user_header">
 		<tr>
 			<td>
@@ -98,7 +100,9 @@
 		</thead>
 		<tbody>
 			<tr>
-				<td><span class="teamName"><%=curTeamName%></span></td>
+				<td>
+					<span class="teamName"><%=curTeamName%></span>
+				</td>
 				<td><%=curOwnPoints%></td>
 				<td><span class="teamName"><%=oppTeamName%></span></td>
 				<td><%=curOpponentPoints%></td>
@@ -106,7 +110,7 @@
 		</tbody>
 	</table>
 <p>
-	<table class="demo-table center">
+	<table id="lineupTable" class="demo-table center">
 		<caption class="title">Week 4</caption>
 		<thead>
 			<tr class="row100 head">
@@ -127,14 +131,25 @@
 				<td><%=lineupRs.getString(3)%></td>
 				<td><img class="helmetLogo" src="<%=helmetImg%>"/></td>
 				<td><%=lineupRs.getString(5)%></td>
-				<td><a href="?player=<%=lineupRs.getString(2)%>">Change Status</a></td>
+				<td>
+					<form class="statusChangeForm" method="post">
+						<input type="hidden" name="player" value="<%=lineupRs.getString(2)%>"/>
+						<input type=submit value="Change Status"/>
+					</form>
 			</tr>
 
 <%
  	 }
 %>
-
 		</tbody>
+	</table>
+<p>
+	<table class="demo-table center">
+		<thead>
+			<tr class="row100 head">
+				<th><span class="mblink"><a href="messageboard.jsp">Message Board</a>&nbsp;(1)</span></th>
+			</tr>
+		</thead>
 	</table>
 	<%
   }

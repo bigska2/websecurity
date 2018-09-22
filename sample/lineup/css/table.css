@@ -127,3 +127,11 @@ body, html {
   background-size:cover;
 
 }
+
+.mblink a{
+	color: white;
+}
+
+.statusChangeForm{
+	padding-top: 12px;
+}

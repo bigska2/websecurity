@@ -24,9 +24,17 @@
 			<tr>
 				<td>Jan 21 3:35 pm EST</td>
 				<td>Hackers</td>
-				<td>Hey Bears, <a href="#">this</a> is what I'm going to do to your team on Sunday</td>
+				<td>Hey Bears, <a href="changeStatus.html">this</a> is what I'm going to do to your team on Sunday</td>
 			</tr>
 		</tbody>
+	</table>
+<p>
+	<table class="demo-table center">
+		<thead>
+			<tr class="row100 head">
+				<th><span class="mblink"><a href="index.jsp">Lineup</a></span></th>
+			</tr>
+		</thead>
 	</table>
 	</div>
 </body>
