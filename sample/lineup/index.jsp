@@ -92,12 +92,16 @@
 			<tr>
 				<th>Team Name</th>
 				<th>Points</th>
+				<th>Opponent Name</th>
+				<th>Opponent Points</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
 				<td><span class="teamName"><%=curTeamName%></span></td>
 				<td><%=curOwnPoints%></td>
+				<td><span class="teamName"><%=oppTeamName%></span></td>
+				<td><%=curOpponentPoints%></td>
 			</tr>
 		</tbody>
 	</table>

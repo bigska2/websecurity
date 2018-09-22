@@ -1,18 +1,35 @@
-<form method="POST" action="j_security_check">
-<table>
-	<tr>
-		<td colspan="2">Login to the Tomcat-Demo application:</td>
-	</tr>
-	<tr>
-		<td>Name:</td>
-		<td><input type="text" name="j_username" /></td>
-	</tr>
-	<tr>
-		<td>Password:</td>
-		<td><input type="password" name="j_password"/ ></td>
-	</tr>
-	<tr>
-		<td colspan="2"><input type="submit" value="Go" /></td>
-	</tr>
-</table>
-</form>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="/sample/css/table.css">
+</head>
+<body>
+
+
+	<div class="banner"><img class="banner_center" src="/sample/images/VHT_Header_Football.png"/></div>
+
+&nbsp;<p>	
+
+	<div class="message-table">
+	<form method="POST" action="j_security_check">
+	<table class="demo-table center">
+		<caption class="title"><a href="#">Forgot Password?</a></caption>
+		<thead>
+			<tr>
+				<th>Username</th>
+				<th>Password</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><input type="text" name="j_username" /></td>
+				<td><input type="password" name="j_password"/ ></td>
+				<td colspan="2"><input type="submit" value="Go" /></td>
+			</tr>
+		</tbody>
+	</table>
+	</form>
+	</div>
+</body>
+</html>
